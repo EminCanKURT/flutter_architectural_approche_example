@@ -1,0 +1,20 @@
+{
+    "home":{
+        "title": "Ana Sayfa"
+    },
+    "general":{
+        "button":{
+            "cancel": "İptal",
+            "ok": "Tamam",
+            "yes": "Evet",
+            "no": "Hayır",
+            "save": "Kaydet"
+        },
+        "dialog":{
+           "version": {
+            "title": "Versiyon",
+            "content": "Bu uygulama sürümünüz {version} şu anki sürümünüzden daha yeni bir sürümdür. Lütfen en son sürüme güncelleyiniz."
+           }
+        }
+    }
+}

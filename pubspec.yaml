@@ -13,6 +13,7 @@ dependencies:
   core:
     path: module/core
   cupertino_icons: ^1.0.8
+  easy_localization: ^3.0.7+1 # localizasyon paketi
   envied: ^1.1.1 # environment paketi
   equatable: ^2.0.7 # model paketi classları oluştururken immutable yapmak için
   flutter:
@@ -51,6 +52,9 @@ flutter_gen:
 
 flutter:
   uses-material-design: true
+  
+  assets:
+    - assets/translations/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

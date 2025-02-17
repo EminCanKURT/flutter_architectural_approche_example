@@ -1,0 +1,20 @@
+{
+    "home":{
+        "title": "Home Page"
+    },
+    "general":{
+        "button":{
+            "cancel": "Cancel",
+            "ok": "OK", 
+            "yes": "Yes",
+            "no": "No",
+            "save": "Save"
+        },
+        "dialog":{
+           "version": {
+            "title": "Version",
+            "content": "Your app version {version} is newer than your current version. Please update to the latest version."
+           }
+        }
+    }
+}
