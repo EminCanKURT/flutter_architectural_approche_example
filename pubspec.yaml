@@ -8,24 +8,21 @@ environment:
   sdk: ^3.6.1
 
 dependencies:
-  flutter:
-    sdk: flutter
-
-  cupertino_icons: ^1.0.8
-  # core packages
-  kartal: ^4.1.0 # extensions paketi
-  vexana: ^5.0.3 # network paketi
-  equatable: ^2.0.7 # model paketi classları oluştururken immutable yapmak için
-  json_annotation: ^4.9.0 # json parse paketi
-  envied: ^1.1.1 # environment paketi
-  flutter_riverpod: ^2.6.1 # state management paketi 
-
-  widgets:
-    path: module/widgets
   common:
     path: module/common
   core:
     path: module/core
+  cupertino_icons: ^1.0.8
+  envied: ^1.1.1 # environment paketi
+  equatable: ^2.0.7 # model paketi classları oluştururken immutable yapmak için
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1 # state management paketi 
+  json_annotation: ^4.9.0 # json parse paketi
+  kartal: ^4.1.0 # extensions paketi
+  vexana: ^5.0.3 # network paketi
+  widgets:
+    path: module/widgets
 
 # dependency_overrides: burasıda paketlerinin versiyonlarını ovvired ederiz. örneğin flutter_bloc 5.0.0 versiyonu ile çalışıyor. ama flutter_bloc 6.0.0 versiyonu ile çalışıyor. bu yüzden dependency_overrides ile 5.0.0 versiyonunu kullanıyoruz.
 

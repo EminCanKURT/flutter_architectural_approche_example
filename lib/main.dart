@@ -4,7 +4,9 @@ void main() {
   runApp(const MyApp());
 }
 
+/// Ana uygulama widget'ı.
 class MyApp extends StatelessWidget {
+  /// Ana uygulama widget'ının oluşturucusudur.
   const MyApp({super.key});
 
   // This widget is the root of your application.
@@ -36,8 +38,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
+/// Ana sayfa widget'ı.
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  /// Ana sayfa widget'ının oluşturucusudur.
+  const MyHomePage({required this.title, super.key});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -48,6 +52,7 @@ class MyHomePage extends StatefulWidget {
   // used by the build method of the State. Fields in a Widget subclass are
   // always marked "final".
 
+  /// Sayfa başlığı.
   final String title;
 
   @override
