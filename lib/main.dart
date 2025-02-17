@@ -1,22 +1,22 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_architectural_approche_example/feature/home/view/widget/home_view.dart';
-import 'package:flutter_architectural_approche_example/product/init/product_localization.dart';
+import 'package:flutter_architectural_approach_example/feature/home/view/widget/home_view.dart';
+import 'package:flutter_architectural_approach_example/product/init/application_initialze.dart';
+import 'package:flutter_architectural_approach_example/product/init/product_localization.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await EasyLocalization.ensureInitialized();
+  await ApplicationInitialize.init();
   runApp(
     ProductLocalization(
-      child: const MyApp(),
+      child: const _MyApp(),
     ),
   );
 }
 
 /// Uygulamanın ana sınıfı
-class MyApp extends StatelessWidget {
+class _MyApp extends StatelessWidget {
   /// MyApp sınıfının oluşturucusudur
-  const MyApp({super.key});
+  const _MyApp();
 
   @override
   Widget build(BuildContext context) {
