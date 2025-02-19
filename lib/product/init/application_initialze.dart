@@ -4,6 +4,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:easy_logger/easy_logger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_architectural_approach_example/product/init/config/app_env.dart';
 import 'package:kartal/kartal.dart';
 import 'package:logger/logger.dart';
 
@@ -21,8 +22,10 @@ final class ApplicationInitialize {
   /// Flutter projelerinde, uygulama çökmelerini önlemek için runApp çağrısını
   /// runZonedGuarded içine almak yaygın bir pratiktir:
   static Future<void> init() async {
+    WidgetsFlutterBinding.ensureInitialized();
+
     // küçük try catch hata loglamak için
-    await runZonedGuarded(
+    await runZonedGuarded<Future<void>>(
       () async {
         await _init();
       },
@@ -35,7 +38,6 @@ final class ApplicationInitialize {
   /// Uygulama başlatma fonksiyonu
   // burada küçük basic işlemler yapılmalı
   static Future<void> _init() async {
-    WidgetsFlutterBinding.ensureInitialized();
     await EasyLocalization.ensureInitialized();
     // localizasyon loglarının seviyesini ayarlar
     EasyLocalization.logger.enableLevels = [LevelMessages.error];
@@ -50,8 +52,8 @@ final class ApplicationInitialize {
       // TODO: custom log yazılacak
       Logger().e(details.exceptionAsString());
     };
+    AppEnv.general();
 
     // TODO: dependency injection
-    // TODO: envied gelecek
   }
 }

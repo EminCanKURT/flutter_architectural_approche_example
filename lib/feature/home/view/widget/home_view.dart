@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_architectural_approach_example/product/init/config/app_env.dart';
 import 'package:flutter_architectural_approach_example/product/init/language/locale_keys.g.dart';
 import 'package:flutter_architectural_approach_example/product/init/product_localization.dart';
 import 'package:flutter_architectural_approach_example/product/utility/constant/enums/locales.dart';
@@ -41,9 +42,15 @@ class _HomeViewState extends State<HomeView> {
           ),
         ],
       ),
-      body: Center(
-        // tr(args: ["arg1", "arg2"])  bizim textin yanına ekleniyor.
-        child: const Text(LocaleKeys.general_button_save).tr(),
+      body: Column(
+        children: [
+          Center(
+            // tr(args: ["arg1", "arg2"])  bizim textin yanına ekleniyor.
+            child: const Text(LocaleKeys.general_button_save).tr(),
+          ),
+          const SizedBox(height: 10),
+          Center(child: Text(AppEnvEnum.dev.value)),
+        ],
       ),
     );
   }

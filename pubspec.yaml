@@ -24,7 +24,7 @@ dependencies:
   flutter_riverpod: ^2.6.1 # state management paketi 
   json_annotation: ^4.9.0 # json parse paketi
   kartal: ^4.1.0 # extensions paketi
-  logger: ^2.5.0 # log paketi
+  logger: ^2.5.0
   vexana: ^5.0.3 # network paketi
   widgets:
     path: module/widgets
@@ -34,13 +34,14 @@ dependencies:
 dev_dependencies:
 # burası proje içeriisnde olacak ama realse alırken proje dışında olacak paketler yazılır.
   build_runner: ^2.3.3 # build paketi
+  envied_generator: ^1.1.1
   flutter_gen_runner: ^5.9.0 # image paketi
   flutter_launcher_icons: ^0.14.3 # icon paketi
   flutter_test:
     sdk: flutter
   json_serializable: ^6.8.0 # json parse paketi
   very_good_analysis: ^7.0.0 # analysis paketi
-
+  
 
 flutter_launcher_icons:
   android: "launcher_icon"
