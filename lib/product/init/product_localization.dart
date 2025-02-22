@@ -5,7 +5,8 @@ import 'package:flutter_architectural_approach_example/product/utility/constant/
 /// Localization sinifinin.
 @immutable
 // @immutable, sinifinin tum alanlarinin degistirilemez olmasi gerektigini
-// Dart analizorune bildirir. Yani, sinifinin tum alanlarinin final olmasi gerekir.
+// Dart analizorune bildirir.
+//Yani, sinifinin tum alanlarinin final olmasi gerekir.
 final class ProductLocalization extends EasyLocalization {
   // final class kullaniminin avantajlari:
   // Ne yapar : extends ve implements edilmeisni engeller.
