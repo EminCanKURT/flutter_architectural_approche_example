@@ -19,6 +19,15 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          SuccessDialog.show(
+            context: context,
+            title: 'title',
+          );
+        },
+        child: const Icon(Icons.add),
+      ),
       appBar: AppBar(
         title: const Text('Ana Sayfa'),
         actions: [
