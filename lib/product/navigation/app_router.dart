@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_architectural_approach_example/feature/home/view/home_detail_view.dart';
+import 'package:flutter_architectural_approach_example/feature/home/view/widget/home_detail_view.dart';
 import 'package:flutter_architectural_approach_example/feature/home/view/widget/home_view.dart';
 
 part 'app_router.gr.dart';
