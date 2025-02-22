@@ -46,7 +46,10 @@ class _HomeViewState extends State<HomeView> {
         children: [
           Center(
             // tr(args: ["arg1", "arg2"])  bizim textin yanına ekleniyor.
-            child: const Text(LocaleKeys.general_button_save).tr(),
+            child: Text(
+              LocaleKeys.general_button_save,
+              style: Theme.of(context).textTheme.titleLarge,
+            ).tr(),
           ),
           const SizedBox(height: 10),
           Center(child: Text(AppEnvEnum.dev.value)),

@@ -22,6 +22,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.6.1 # state management paketi 
+  google_fonts: ^6.2.1
   json_annotation: ^4.9.0 # json parse paketi
   kartal: ^4.1.0 # extensions paketi
   logger: ^2.5.0
