@@ -1,13 +1,16 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architectural_approach_example/product/init/config/app_env.dart';
 import 'package:flutter_architectural_approach_example/product/init/language/locale_keys.g.dart';
 import 'package:flutter_architectural_approach_example/product/init/product_localization.dart';
+import 'package:flutter_architectural_approach_example/product/navigation/app_router.dart';
 import 'package:flutter_architectural_approach_example/product/utility/constant/enums/locales.dart';
 import 'package:gen/gen.dart';
 
 /// Ana sayfa view'i
-class HomeView extends StatefulWidget {
+@RoutePage()
+final class HomeView extends StatefulWidget {
   /// Oluşturucusudur
   const HomeView({super.key});
 
@@ -65,6 +68,10 @@ class _HomeViewState extends State<HomeView> {
           ),
           const SizedBox(height: 10),
           Center(child: Text(AppEnvEnum.dev.value)),
+          ElevatedButton(
+            onPressed: () => context.router.push(HomeDetailRoute(id: '1')),
+            child: const Text('Detail'),
+          ),
         ],
       ),
     );
