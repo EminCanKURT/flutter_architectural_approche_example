@@ -1,5 +1,5 @@
 import 'package:envied/envied.dart';
-import 'package:flutter_architectural_approach_example/product/init/config/app_config.dart';
+import 'package:gen/src/environment/app_configuration.dart';
 
 part 'prod_env.g.dart';
 
@@ -9,7 +9,7 @@ part 'prod_env.g.dart';
 )
 
 /// Prod ortamı için environment değişkenleri
-final class ProdEnv implements AppConfig {
+final class ProdEnv implements AppConfiguration {
   @EnviedField(varName: 'BASE_URL')
 
   /// Prod ortamı için base url

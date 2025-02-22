@@ -52,7 +52,7 @@ final class ApplicationInitialize {
       // TODO: custom log yazılacak
       Logger().e(details.exceptionAsString());
     };
-    AppEnv.general();
+    AppEnvironment.general();
 
     // TODO: dependency injection
   }

@@ -1,5 +1,5 @@
 import 'package:envied/envied.dart';
-import 'package:flutter_architectural_approach_example/product/init/config/app_config.dart';
+import 'package:gen/src/environment/app_configuration.dart';
 
 part 'dev_env.g.dart';
 
@@ -9,7 +9,7 @@ part 'dev_env.g.dart';
 )
 
 /// Dev ortamı için environment değişkenleri
-final class DevEnv implements AppConfig {
+final class DevEnv implements AppConfiguration {
 // bu değerleri değiştireceksen .g yi sil yeniden oluştur
   @EnviedField(varName: 'BASE_URL')
 

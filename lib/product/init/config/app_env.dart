@@ -1,24 +1,22 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_architectural_approach_example/product/init/config/app_config.dart';
-import 'package:flutter_architectural_approach_example/product/init/config/dev_env.dart';
-import 'package:flutter_architectural_approach_example/product/init/config/prod_env.dart';
+import 'package:gen/gen.dart';
 
 /// App env
-final class AppEnv {
+final class AppEnvironment {
   /// Setup app env
-  AppEnv.setup({required AppConfig appConfig}) {
+  AppEnvironment.setup({required AppConfiguration appConfig}) {
     _appConfig = appConfig;
   }
 
   /// General setup
-  AppEnv.general() {
+  AppEnvironment.general() {
     _appConfig = kDebugMode ? DevEnv() : ProdEnv();
   }
 
-  static late final AppConfig _appConfig;
+  static late final AppConfiguration _appConfig;
 
   /// App config
-  static AppConfig get appConfig => _appConfig;
+  static AppConfiguration get appConfig => _appConfig;
 }
 
 /// App env enum

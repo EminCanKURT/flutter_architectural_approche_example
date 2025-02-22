@@ -4,6 +4,7 @@ import 'package:flutter_architectural_approach_example/product/init/config/app_e
 import 'package:flutter_architectural_approach_example/product/init/language/locale_keys.g.dart';
 import 'package:flutter_architectural_approach_example/product/init/product_localization.dart';
 import 'package:flutter_architectural_approach_example/product/utility/constant/enums/locales.dart';
+import 'package:gen/gen.dart';
 
 /// Ana sayfa view'i
 class HomeView extends StatefulWidget {
@@ -44,6 +45,17 @@ class _HomeViewState extends State<HomeView> {
       ),
       body: Column(
         children: [
+          //ben bir paketten assette erieşeceksem onun package adını
+          //yazmam gerekiyor.
+          //   Assets.icons.icLove.svg(
+          //     package: 'gen',
+          //   ),
+          Assets.lottie.animZombie.lottie(
+            package: 'gen',
+          ),
+          Assets.images.imgFlags.image(
+            package: 'gen',
+          ),
           Center(
             // tr(args: ["arg1", "arg2"])  bizim textin yanına ekleniyor.
             child: Text(

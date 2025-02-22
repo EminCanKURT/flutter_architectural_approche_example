@@ -1,5 +1,5 @@
 /// App config
-abstract class AppConfig {
+abstract class AppConfiguration {
   /// Base url
   String get baseUrl;
 

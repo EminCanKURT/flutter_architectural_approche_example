@@ -16,14 +16,15 @@ dependencies:
   easy_localization: ^3.0.7+1 # localizasyon paketi
   # utility paketler
   easy_logger: ^0.0.2
-  #
-  envied: ^1.1.1 # environment paketi
+
   equatable: ^2.0.7 # model paketi classları oluştururken immutable yapmak için
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.6.1 # state management paketi 
+  gen:
+    path: module/gen
   google_fonts: ^6.2.1
-  json_annotation: ^4.9.0 # json parse paketi
+
   kartal: ^4.1.0 # extensions paketi
   logger: ^2.5.0
   vexana: ^5.0.3 # network paketi
@@ -34,9 +35,6 @@ dependencies:
 
 dev_dependencies:
 # burası proje içeriisnde olacak ama realse alırken proje dışında olacak paketler yazılır.
-  build_runner: ^2.3.3 # build paketi
-  envied_generator: ^1.1.1
-  flutter_gen_runner: ^5.9.0 # image paketi
   flutter_launcher_icons: ^0.14.3 # icon paketi
   flutter_test:
     sdk: flutter
@@ -50,11 +48,6 @@ flutter_launcher_icons:
   image_path: "assets/app/app_icon.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
   remove_alpha_ios: true 
-
-flutter_gen:
-  output: lib/product/generated/
-  integrations:
-    lottie: true
 
 flutter:
   uses-material-design: true
