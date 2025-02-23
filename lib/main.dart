@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architectural_approach_example/product/init/application_initialze.dart';
 import 'package:flutter_architectural_approach_example/product/init/product_localization.dart';
+import 'package:flutter_architectural_approach_example/product/init/state_init.dart';
 import 'package:flutter_architectural_approach_example/product/init/theme/index.dart';
 import 'package:flutter_architectural_approach_example/product/navigation/app_router.dart';
 import 'package:widgets/widgets.dart';
@@ -10,7 +11,7 @@ void main() async {
   await ApplicationInitialize.init();
   runApp(
     ProductLocalization(
-      child: const _MyApp(),
+      child: const StateInit(child: _MyApp()),
     ),
   );
 }
