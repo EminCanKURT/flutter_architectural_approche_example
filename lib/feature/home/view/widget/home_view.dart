@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architectural_approach_example/product/init/product_localization.dart';
 import 'package:flutter_architectural_approach_example/product/utility/constant/enums/locales.dart';
+import 'package:flutter_architectural_approach_example/product/widget/padding/project_padding.dart';
 import 'package:kartal/kartal.dart';
 import 'package:widgets/widgets.dart';
 
@@ -59,10 +60,13 @@ class _HomeViewState extends State<HomeView> {
           //   Assets.icons.icLove.svg(
           //     package: 'gen',
           //   ),
-          AdaptAllView(
-            phone: Text(''.ext.version),
-            tablet: Text(''.ext.version),
-            desktop: Text(''.ext.version),
+          Padding(
+            padding: const ProjectPadding.allNormal(),
+            child: AdaptAllView(
+              phone: Text(''.ext.version),
+              tablet: Text(''.ext.version),
+              desktop: Text(''.ext.version),
+            ),
           ),
           Text(
             'veli',
